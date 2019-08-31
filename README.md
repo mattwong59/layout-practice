@@ -1,4 +1,3 @@
-A place to practice creating a responsive layout with plain CSS3.
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
