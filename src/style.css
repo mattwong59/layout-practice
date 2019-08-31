@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+  * a {
+    text-decoration: none; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  section .showcase {
+    background: lavender;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 300px, [col-start]);
+    grid-template-rows: 1fr 1fr; }
+    section .showcase .project-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 450px; }
+    section .showcase .project-description {
+      width: 100%;
+      text-align: center; }
+    section .showcase .project-img {
+      width: 100%; }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero a {
+    color: #f3f3f3; }
+  .hero ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between; }
+  .hero li {
+    list-style: none; }
+  .hero header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.hero:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  -webkit-clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%); }
+
+.content {
+  position: relative;
+  max-width: 900px;
+  text-align: center; }
+  .content h2 {
+    font-size: 5rem; }
+  .content p {
+    font-size: 1.5rem; }
+
+/*# sourceMappingURL=style.css.map */
