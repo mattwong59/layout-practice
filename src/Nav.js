@@ -2,10 +2,18 @@ import React, { Component } from "react";
 
 export default class Nav extends Component {
   render() {
+    //Turn this jquery into vanilla JS
+    // $(
+    //   document.ready(function() {
+    //     $(".menu-toggle").click(function() {
+    //       $("nav").toggleClass("active");
+    //     });
+    //   })
+    // );
     return (
       <header>
         <div className="logo">MW</div>
-        <nav>
+        <nav className="active">
           <ul>
             <li>
               <a href="" className="active">

@@ -57,6 +57,7 @@ $base-white: #f3f3f3;
       font-size: 24px;
       color: $base-white;
       cursor: pointer;
+      display: none;
     }
 
     nav {
@@ -107,6 +108,40 @@ $base-white: #f3f3f3;
   }
 }
 
+
+// TABLETS
+@media (max-width: 991px) {
+  .hero {
+    header {
+      padding: 0 20px;
+      nav {
+        // display: none;
+        position: absolute;
+        top: 50px;
+        left: -1000px;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: rgba($color: #162a32, $alpha: 0.94);
+        transition: 0.5s;
+        ul {
+          display:block;
+          text-align: center;
+          li a{
+            border-bottom: 1px solid #203c47;
+          }
+        } 
+      }
+
+      nav.active {
+        left:0;
+        z-index: 1;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  }
+}
 
 
 

@@ -35,7 +35,8 @@
       line-height: 50px;
       font-size: 24px;
       color: #f3f3f3;
-      cursor: pointer; }
+      cursor: pointer;
+      display: none; }
     .hero header nav {
       float: right; }
       .hero header nav ul {
@@ -71,6 +72,27 @@
   .content p {
     font-size: 1.5rem; }
 
+@media (max-width: 991px) {
+  .hero header {
+    padding: 0 20px; }
+    .hero header nav {
+      position: absolute;
+      top: 50px;
+      left: -1000px;
+      width: 100%;
+      height: calc(100vh - 50px);
+      background: rgba(22, 42, 50, 0.94);
+      transition: 0.5s; }
+      .hero header nav ul {
+        display: block;
+        text-align: center; }
+        .hero header nav ul li a {
+          border-bottom: 1px solid #203c47; }
+    .hero header nav.active {
+      left: 0;
+      z-index: 1; }
+    .hero header .menu-toggle {
+      display: block; } }
 /* For desktop: */
 
 /*# sourceMappingURL=style.css.map */
