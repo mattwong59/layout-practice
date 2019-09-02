@@ -96,5 +96,9 @@
     .hero header .menu-toggle {
       display: block; } }
 /* For desktop: */
+@media only screen and (min-width: 992px) {
+  .hero header nav {
+    display: flex;
+    justify-content: flex-end; } }
 
 /*# sourceMappingURL=style.css.map */
