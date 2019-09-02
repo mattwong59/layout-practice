@@ -1,68 +1,25 @@
 import React, { Component } from "react";
 
 export default class Nav extends Component {
+  constructor() {
+    super();
+    this.handleClick = this._handleClick.bind(this);
+  }
+
+  componentDidUpdate() {
+    this._handleClick();
+  }
+
+  _handleClick() {
+    const nav = this._acc.children[0].childNodes[1];
+    nav.classList.toggle("active");
+  }
+
   render() {
-    //Turn this jquery into vanilla JS
-    // $(
-    //   document.ready(function() {
-    //     $(".menu-toggle").click(function() {
-    //       $("nav").toggleClass("active");
-    //     });
-    //   })
-    // );
     return (
-      <header>
-        <div className="logo">MW</div>
-        <nav className="active">
-          <ul>
-            <li>
-              <a href="" className="active">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Work</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a
-                href="mailto:mattwong59@gmail.com"
-                target="_blank"
-                className="far fa-envelope"
-              />
-            </li>
-            <li>
-              <a
-                href="https://github.com/mattwong59"
-                target="_blank"
-                className="fab fa-github"
-              />
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/mattwong59/"
-                target="_blank"
-                className="fab fa-linkedin"
-              />
-            </li>
-            <li>
-              <a
-                href="https://codepen.io/mattwong59"
-                target="_blank"
-                className="fab fa-codepen"
-              />
-            </li>
-          </ul>
-        </nav>
-        <div className="menu-toggle">
-          <i className="fas fa-bars" aria-hidden="true"></i>
-        </div>
-      </header>
+      <div ref={a => (this._acc = a)} onClick={this.handleClick}>
+        {this.props.children}
+      </div>
     );
   }
 }
