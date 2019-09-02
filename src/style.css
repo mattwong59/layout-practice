@@ -88,6 +88,8 @@
         text-align: center; }
         .hero header nav ul li a {
           border-bottom: 1px solid #203c47; }
+      .hero header nav .social ul li {
+        display: inline-block; }
     .hero header nav.active {
       left: 0;
       z-index: 1; }

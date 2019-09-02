@@ -11,48 +11,52 @@ export default class Hero extends Component {
             <nav>
               <ul>
                 <li>
-                  <a href="" className="active">
+                  <a href="#Home" className="active">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a href="#About">About</a>
                 </li>
                 <li>
-                  <a href="">Work</a>
+                  <a href="#Work">Work</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:mattwong59@gmail.com"
-                    target="_blank"
-                    className="far fa-envelope"
-                  />
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/mattwong59"
-                    target="_blank"
-                    className="fab fa-github"
-                  />
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/mattwong59/"
-                    target="_blank"
-                    className="fab fa-linkedin"
-                  />
-                </li>
-                <li>
-                  <a
-                    href="https://codepen.io/mattwong59"
-                    target="_blank"
-                    className="fab fa-codepen"
-                  />
+                  <a href="#Contact">Contact</a>
                 </li>
               </ul>
+              <div className="social">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:mattwong59@gmail.com"
+                      target="_blank"
+                      className="far fa-envelope"
+                    />
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/mattwong59"
+                      target="_blank"
+                      className="fab fa-github"
+                    />
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/mattwong59/"
+                      target="_blank"
+                      className="fab fa-linkedin"
+                    />
+                  </li>
+                  <li>
+                    <a
+                      href="https://codepen.io/mattwong59"
+                      target="_blank"
+                      className="fab fa-codepen"
+                    />
+                  </li>
+                </ul>
+              </div>
             </nav>
             <div className="menu-toggle">
               <i className="fas fa-bars" aria-hidden="true"></i>

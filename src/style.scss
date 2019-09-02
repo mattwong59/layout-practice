@@ -130,6 +130,9 @@ $base-white: #f3f3f3;
             border-bottom: 1px solid #203c47;
           }
         } 
+        .social ul li {
+          display: inline-block;
+        }
       }
 
       nav.active {
