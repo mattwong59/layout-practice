@@ -31,28 +31,28 @@ export default class Hero extends Component {
                     <a
                       href="mailto:mattwong59@gmail.com"
                       target="_blank"
-                      className="far fa-envelope"
+                      className="far fa-envelope icon"
                     />
                   </li>
                   <li>
                     <a
                       href="https://github.com/mattwong59"
                       target="_blank"
-                      className="fab fa-github"
+                      className="fab fa-github icon"
                     />
                   </li>
                   <li>
                     <a
                       href="https://www.linkedin.com/in/mattwong59/"
                       target="_blank"
-                      className="fab fa-linkedin"
+                      className="fab fa-linkedin icon"
                     />
                   </li>
                   <li>
                     <a
                       href="https://codepen.io/mattwong59"
                       target="_blank"
-                      className="fab fa-codepen"
+                      className="fab fa-codepen icon"
                     />
                   </li>
                 </ul>

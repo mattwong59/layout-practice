@@ -155,6 +155,12 @@ $base-white: #f3f3f3;
       nav {
         display: flex;
         justify-content: flex-end;
+        .social {
+          margin: 0 10px;
+        }
+        .icon {
+          padding: 0 10px;
+        }
       }
     }
   }
