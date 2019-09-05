@@ -1,10 +1,20 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif; }
-  * a {
+  font-family: sans-serif;
+  font-size: 14px; }
+  body a {
     text-decoration: none; }
+
+h2 {
+  font-size: 3.5rem; }
+
+h3 {
+  font-size: 1.7rem; }
+
+h4 {
+  font-size: 1.1rem; }
 
 .hero {
   position: relative;
@@ -67,10 +77,33 @@
   position: relative;
   max-width: 900px;
   text-align: center; }
-  .content h2 {
-    font-size: 5rem; }
   .content p {
-    font-size: 1.5rem; }
+    font-size: 1rem; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  section .showcase {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    width: 100%; }
+    section .showcase .project-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px; }
+    section .showcase .project-description {
+      width: 100%;
+      text-align: center;
+      background: #f3f3f3;
+      box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.08); }
+    section .showcase .project-img {
+      width: 100%; }
 
 @media (max-width: 991px) {
   .hero header {
@@ -95,7 +128,7 @@
       z-index: 1; }
     .hero header .menu-toggle {
       display: block; } }
-/* For desktop: */
+/* DESKTOP */
 @media only screen and (min-width: 992px) {
   .hero header nav {
     display: flex;
@@ -103,6 +136,10 @@
     .hero header nav .social {
       margin: 0 10px; }
     .hero header nav .icon {
-      padding: 0 10px; } }
+      padding: 0 10px; }
+
+  section .showcase {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
 /*# sourceMappingURL=style.css.map */
