@@ -67,10 +67,10 @@ export default class Hero extends Component {
         <div className="content">
           <h2>Matt Wong</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-            iure suscipit repellat voluptas ipsum repudiandae odio delectus
-            saepe, molestias minus consequatur veniam eius temporibus in atque?
-            Facilis eligendi fuga ducimus!
+            Hi there I'm Matt. Currently an SQL developer working in data
+            warehousing for a business intelligence. Apart from SQL, I love
+            developing projects in React and playing around with all the cool
+            things that are possible in CSS3.{" "}
           </p>
         </div>
       </section>
