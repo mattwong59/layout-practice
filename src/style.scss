@@ -36,24 +36,12 @@ h4 {
   a {
     color: $base-white;
   }
-  // ul {
-  //   width: 50%;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-  // li {
-  //   list-style: none;
-  // }
   header{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0 20px; 
-    // height: 6vh;
-    // display: flex; 
-    // justify-content: center;
-    // align-items: center;
     .logo {
       color: $base-white;
       font-size: 24px;
@@ -62,7 +50,6 @@ h4 {
       font-weight: bold;
       float: left;
     }
-
     .menu-toggle {
       float: right;
       padding: 0 2rem;
@@ -72,7 +59,6 @@ h4 {
       cursor: pointer;
       display: none;
     }
-
     nav {
       float: right;
       ul {
@@ -95,7 +81,6 @@ h4 {
   }
 }
 
-
 .hero:before {
   content: '';
   position: absolute;
@@ -104,9 +89,8 @@ h4 {
   width: 100%;
   height: 200px;
   background: #fff;
-  -webkit-clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%);
+  --webkit-clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%);
   clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%);
-  
 }
 
 .content {
@@ -137,10 +121,8 @@ h4 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-
         // border: 1px solid lime;
-        margin: 10px;
+        margin: 10px 20px;
       }
       .project-description {
         width: 100%;
@@ -154,6 +136,21 @@ h4 {
     }
   }
 
+  //FOOTER
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ul {
+      list-style: none;
+      display: flex;
+      .icon {
+        padding: 0 20px;
+        color: #2c5364;
+      }
+    }
+  }
 
 // TABLETS
 @media (max-width: 991px) {
@@ -161,7 +158,6 @@ h4 {
     header {
       padding: 0 20px;
       nav {
-        // display: none;
         position: absolute;
         top: 50px;
         left: -1200px;
@@ -191,12 +187,12 @@ h4 {
     }
   }
 
-  // section {
-  //   .showcase {
-  //     grid-template-columns: 1fr 1fr 1fr;
-  //     grid-template-rows: 1fr 1fr; 
-  //   }
-  // }
+  section {
+    .showcase {
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr; 
+    }
+  }
 }
 
 
@@ -225,99 +221,4 @@ h4 {
     }
   }
 }
-//   section {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     width: 100%; 
-//     // height: 100vh;
-//     .showcase {
-//       // background: lavender;
-//       border: 1px solid red;
-//       display: grid; 
-//       grid-template-columns: 1fr 1fr 1fr;
-//       grid-template-rows: 1fr 1fr; 
-//       width: 100%;
-//       padding: 2rem 5rem;
-//       .project-card {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-        
-
-//         // border: 1px solid lime;
-//         margin: 10px;
-//       }
-//       .project-description {
-//         width: 100%;
-//         text-align: center;
-//         background: $base-white;
-//         box-shadow: 0px 6px 12px 2px rgba(0,0,0,.08);
-//       }
-//       .project-img{
-//         width: 100%;
-//       }
-//     }
-//   }
-
-//   .hero {
-//     position: relative;
-//     width: 100%;
-//     height: 90vh;
-//     background: linear-gradient(45deg, #0f2027, #203a43, #2c5364 );
-//     color: $base-white;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     a {
-//       color: $base-white;
-//     }
-//     ul {
-//       width: 50%;
-//       display: flex;
-//       justify-content: space-between;
-//     }
-//     li {
-//       list-style: none;
-//     }
-//     header{
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       padding: 1rem; 
-//       height: 6vh;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-
-//   .hero:before {
-//     content: '';
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 200px;
-//     background: #fff;
-//     -webkit-clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%);
-//     clip-path: polygon(100% 20%, 0% 100%, 100% 100%, 100% 100%);
-    
-//   }
-
-//   .content {
-//     position: relative;
-//     max-width: 900px;
-//     text-align: center;
-//     h2 {
-//       font-size: 5rem;
-//     }
-//     p {
-//       font-size: 1.5rem;
-//     }
-//   }
-// }
-
-
 
